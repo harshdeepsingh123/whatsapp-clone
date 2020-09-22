@@ -1,0 +1,150 @@
+[debug] [2020-09-22T14:16:12.890Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T14:16:12.892Z] Command:       E:\Program Files\nodejs\node.exe C:\Users\Harshdeep Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-22T14:16:12.892Z] CLI Version:   8.10.0
+[debug] [2020-09-22T14:16:12.892Z] Platform:      win32
+[debug] [2020-09-22T14:16:12.892Z] Node Version:  v12.14.1
+[debug] [2020-09-22T14:16:12.893Z] Time:          Tue Sep 22 2020 19:46:12 GMT+0530 (India Standard Time)
+[debug] [2020-09-22T14:16:12.894Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T14:16:12.894Z] 
+[debug] [2020-09-22T14:16:12.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-22T14:16:12.903Z] > authorizing via signed-in user
+[debug] [2020-09-22T14:16:12.903Z] [iam] checking project whats-app-clone-30ad2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-22T14:16:12.906Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whats-app-clone-30ad2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-22T14:16:15.058Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:14:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1323","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-22T14:16:15.061Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-30ad2  
+ 
+[debug] [2020-09-22T14:16:15.994Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:14:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'whats-app-clone-30ad2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-22T14:16:16.009Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-22T14:16:19.676Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:14:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[whats-app-clone-30ad2]: beginning deploy... 
+[info] i  hosting[whats-app-clone-30ad2]: found 18 files in build 
+[debug] [2020-09-22T14:16:19.711Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-09-22T14:16:20.431Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-09-22T14:16:20.432Z] [hosting][hash queue][FINAL] {"max":702,"min":12,"avg":59.5,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":720}
+[debug] [2020-09-22T14:16:20.432Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions/64c6d0d1f2a9dc99:populateFiles  
+ <request body omitted>
+[debug] [2020-09-22T14:16:22.719Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:14:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-22T14:16:22.738Z] [hosting][populate queue][FINAL] {"max":2291,"min":2291,"avg":2291,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2308}
+[debug] [2020-09-22T14:16:22.738Z] [hosting] uploads queued: 18
+[debug] [2020-09-22T14:16:42.815Z] [uploadQueue] Retrying task 8ddb8bdde65a5925f3b809c4d18fb028382230d48150f28755a44c7d2b149bf3
+[debug] [2020-09-22T14:16:42.867Z] [uploadQueue] Retrying task ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331
+[debug] [2020-09-22T14:16:42.891Z] [uploadQueue] Retrying task e2dcf156d2203ed0d48bd70a9516c2c3bd2d9d5940218298685c5d4c6c15630b
+[debug] [2020-09-22T14:16:44.044Z] [uploadQueue] Retrying task f9dbe4983d8dc0a7ef6cee0e0f87dd553252736df67953b50b3e42e7ad684347
+[debug] [2020-09-22T14:16:44.284Z] [uploadQueue] Retrying task a84eb127e75a49f7a6390a9905ecd36aff20fe1d4cfd19023665d419e228bc87
+[debug] [2020-09-22T14:16:44.286Z] [uploadQueue] Retrying task fba5f32d700263d0b7c4d0363d9df45be95dda3f10c84239cd8ca3d840de39b4
+[debug] [2020-09-22T14:16:44.287Z] [uploadQueue] Retrying task 5fc41c6d6848656ec1a3979ad7c35821f5aaa1d5768cc6d61bf5bb746635ad20
+[debug] [2020-09-22T14:16:44.288Z] [uploadQueue] Retrying task a7fafb603ffcf8eedcd44bb607f09d869560897a027d30ee7df4d83f65f54144
+[debug] [2020-09-22T14:16:44.289Z] [uploadQueue] Retrying task 0e1c43b1fda00314cb3107128b6a282a45163658981326841bc660b59bd7c650
+[debug] [2020-09-22T14:16:44.290Z] [uploadQueue] Retrying task e28fcc1f00b0e8f17a4872a411588b2ccca0e57561c758c2d0b5d49ab962b84b
+[debug] [2020-09-22T14:16:44.291Z] [uploadQueue] Retrying task dbec58984b7b6889c10a25848246559e06f8efb62f19298f223b5eb9a3528506
+[debug] [2020-09-22T14:17:04.628Z] [uploadQueue] Retrying task 8ddb8bdde65a5925f3b809c4d18fb028382230d48150f28755a44c7d2b149bf3
+[debug] [2020-09-22T14:17:05.861Z] [uploadQueue] Retrying task f9dbe4983d8dc0a7ef6cee0e0f87dd553252736df67953b50b3e42e7ad684347
+[debug] [2020-09-22T14:17:06.109Z] [uploadQueue] Retrying task 5fc41c6d6848656ec1a3979ad7c35821f5aaa1d5768cc6d61bf5bb746635ad20
+[debug] [2020-09-22T14:17:06.110Z] [uploadQueue] Retrying task dbec58984b7b6889c10a25848246559e06f8efb62f19298f223b5eb9a3528506
+[debug] [2020-09-22T14:17:06.113Z] [uploadQueue] Retrying task a84eb127e75a49f7a6390a9905ecd36aff20fe1d4cfd19023665d419e228bc87
+[debug] [2020-09-22T14:17:27.247Z] [uploadQueue] Retrying task 8ddb8bdde65a5925f3b809c4d18fb028382230d48150f28755a44c7d2b149bf3
+[debug] [2020-09-22T14:17:28.475Z] [uploadQueue] Retrying task f9dbe4983d8dc0a7ef6cee0e0f87dd553252736df67953b50b3e42e7ad684347
+[debug] [2020-09-22T14:17:28.731Z] [uploadQueue] Retrying task dbec58984b7b6889c10a25848246559e06f8efb62f19298f223b5eb9a3528506
+[debug] [2020-09-22T14:17:28.732Z] [uploadQueue] Retrying task a84eb127e75a49f7a6390a9905ecd36aff20fe1d4cfd19023665d419e228bc87
+[debug] [2020-09-22T14:17:51.212Z] [uploadQueue] Retrying task a84eb127e75a49f7a6390a9905ecd36aff20fe1d4cfd19023665d419e228bc87
+[debug] [2020-09-22T14:17:53.616Z] [hosting][upload queue][FINAL] {"max":3703,"min":2043,"avg":2358.2777777777774,"active":0,"complete":18,"success":18,"errored":0,"retried":21,"total":18,"elapsed":90896}
+[info] +  hosting[whats-app-clone-30ad2]: file upload complete 
+[debug] [2020-09-22T14:17:53.619Z] [hosting] deploy completed after 93938ms
+[debug] [2020-09-22T14:18:14.692Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "whats-app-clone-30ad2"
+    },
+    "site": "whats-app-clone-30ad2",
+    "version": "sites/whats-app-clone-30ad2/versions/64c6d0d1f2a9dc99"
+  }
+]
+[info] i  hosting[whats-app-clone-30ad2]: finalizing version... 
+[debug] [2020-09-22T14:18:14.697Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions/64c6d0d1f2a9dc99?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-09-22T14:18:36.486Z] Error: connect ETIMEDOUT 172.217.167.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.167.234:443
+[debug] [2020-09-22T14:20:19.879Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T14:20:19.881Z] Command:       E:\Program Files\nodejs\node.exe C:\Users\Harshdeep Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-22T14:20:19.881Z] CLI Version:   8.10.0
+[debug] [2020-09-22T14:20:19.881Z] Platform:      win32
+[debug] [2020-09-22T14:20:19.881Z] Node Version:  v12.14.1
+[debug] [2020-09-22T14:20:19.882Z] Time:          Tue Sep 22 2020 19:50:19 GMT+0530 (India Standard Time)
+[debug] [2020-09-22T14:20:19.882Z] ----------------------------------------------------------------------
+[debug] [2020-09-22T14:20:19.882Z] 
+[debug] [2020-09-22T14:20:19.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-22T14:20:19.890Z] > authorizing via signed-in user
+[debug] [2020-09-22T14:20:19.890Z] [iam] checking project whats-app-clone-30ad2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-09-22T14:20:19.893Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whats-app-clone-30ad2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-09-22T14:20:21.775Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:18:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1360","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-22T14:20:21.781Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-30ad2  
+ 
+[debug] [2020-09-22T14:20:22.395Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:18:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'whats-app-clone-30ad2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-09-22T14:20:22.411Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-09-22T14:20:25.314Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:18:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[whats-app-clone-30ad2]: beginning deploy... 
+[info] i  hosting[whats-app-clone-30ad2]: found 18 files in build 
+[debug] [2020-09-22T14:20:25.353Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-09-22T14:20:25.353Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":5}
+[debug] [2020-09-22T14:20:25.353Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions/a083888f219681fb:populateFiles  
+ <request body omitted>
+[debug] [2020-09-22T14:20:27.838Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Sep 2020 14:18:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-22T14:20:27.839Z] [hosting][populate queue][FINAL] {"max":2488,"min":2488,"avg":2488,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2488}
+[debug] [2020-09-22T14:20:27.839Z] [hosting] uploads queued: 0
+[debug] [2020-09-22T14:20:27.840Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1600784427840}
+[info] +  hosting[whats-app-clone-30ad2]: file upload complete 
+[debug] [2020-09-22T14:20:27.842Z] [hosting] deploy completed after 2524ms
+[debug] [2020-09-22T14:20:28.613Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "whats-app-clone-30ad2"
+    },
+    "site": "whats-app-clone-30ad2",
+    "version": "sites/whats-app-clone-30ad2/versions/a083888f219681fb"
+  }
+]
+[info] i  hosting[whats-app-clone-30ad2]: finalizing version... 
+[debug] [2020-09-22T14:20:28.617Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/whats-app-clone-30ad2/versions/a083888f219681fb?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-09-22T14:21:10.662Z] Error: connect ETIMEDOUT 172.217.167.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.167.234:443
